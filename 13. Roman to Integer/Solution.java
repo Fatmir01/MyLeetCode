@@ -38,7 +38,33 @@ class Solution {
 
              }
         }
-        else number = number +1;
+        else{
+            switch(s.charAt(i)){
+                 case 'I': 
+                     number = number + 1;
+                break;
+                 case 'V':
+                    number = number + 5;
+                    break;
+                 case 'X': 
+                    number = number + 10;
+                    break;
+                 case 'L': 
+                    number = number + 50;
+                    break;
+                 case 'C': 
+
+                    number = number + 100;
+                    break;
+                 case 'D': 
+                    number = number + 500;
+                    break;
+                 case 'M': 
+                     number = number + 1000;
+                    break;
+
+             }
+        }
         
     }
     
